@@ -74,7 +74,6 @@ public class ModuleRepositoryTest {
 
         for (Module module : modules) {
             assertEquals("Introduction to Programming", module.getTitle());
-            // Add more property assertions as needed
         }
 
         // Test with non-existent course ID
