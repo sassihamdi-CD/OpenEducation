@@ -5,8 +5,6 @@ import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.core.SpringVersion;
-
 import java.util.List;
 
 /**
@@ -19,18 +17,23 @@ import java.util.List;
 @Table(name = "subject")
 public class Subject {
 
+    /**
+     * Unique identifier for the subject.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "subjectId")
     private long subjectId;
+
 
     /**
      * Name of the subject (e.g., "Java Programming," "Data Science").
      */
     @Getter
     @NotNull
-    @Column(name = "subjectName", nullable = false)
+    @Column(name = "subjectName", nullable = false, unique = true)
     private String subjectName;
+
 
 
     /**
@@ -41,11 +44,13 @@ public class Subject {
     private String description;
 
 
+
     /**
      * List of associated courses related to this subject.
      */
     @OneToMany(mappedBy = "Subject", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Course> associatedCourses;
+
 
     /**
      * Constructor for creating a subject.

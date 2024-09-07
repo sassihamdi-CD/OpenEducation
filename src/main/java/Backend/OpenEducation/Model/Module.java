@@ -35,7 +35,7 @@ public class Module {
      */
     @Getter
     @NotNull
-    @Column(name = "title", nullable = false)
+    @Column(name = "title", nullable = false, unique = true)
     private String title;
 
 
@@ -43,7 +43,7 @@ public class Module {
      * Detailed content of the module.
      */
     @Getter
-    @Column(name = "content", columnDefinition = "TEXT")
+    @Column(name = "content", columnDefinition = "TEXT", unique = true)
     private String content;
 
 

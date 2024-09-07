@@ -35,7 +35,7 @@ public class Material {
      */
     @NotNull(message = "Title cannot be null")
     @Getter
-    @Column(name = "title")
+    @Column(name = "title", unique = true, nullable = false)
     private final String title;
 
 

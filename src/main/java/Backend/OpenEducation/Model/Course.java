@@ -4,8 +4,6 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
-import java.util.List;
-
 /**
  * Represents a course in the OpenEducation system.
  * Each course has a unique ID, title, and description.
@@ -38,7 +36,7 @@ public class Course {
     @Setter
     @Getter
     @NotNull
-    @Column(name = "title", nullable = false)
+    @Column(name = "title", nullable = false, unique = true)
     private String title;
 
 
@@ -67,6 +65,18 @@ public class Course {
     public Course(String title, String description) {
         this.title = title;
         this.description = description;
+    }
+
+
+    public void setId(@NotNull Long id) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setId'");
+    }
+
+
+    public Long getId() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getId'");
     }
 
 }
