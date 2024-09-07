@@ -1,4 +1,4 @@
-# # OpenEducation Platform
+## OpenEducation Platform
 
 OpenEducation is a platform designed to provide free and accessible educational resources to learners worldwide. It offers a variety of courses, interactive materials, and tools to enhance the learning experience.
 
