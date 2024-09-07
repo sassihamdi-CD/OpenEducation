@@ -20,7 +20,7 @@ OpenEducation is a platform designed to provide free and accessible educational 
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/OpenEducation.git
+    git clone https://github.com/sassihamdi-CD/OpenEducation.git
     ```
 2. Navigate to the project directory:
     ```bash
@@ -66,4 +66,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Contact
 Maintainer: Sassi Hamdi
-Email: sassi.hamdi@example.com
+Email: hamdysassy7@gmail.com
